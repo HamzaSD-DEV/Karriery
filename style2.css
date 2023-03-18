@@ -1,0 +1,158 @@
+.container {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.container .content-profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 780px;
+    height: 650px;
+    border-radius: 7px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 0 auto;
+    
+}
+
+.container .content-profile .content-header {
+    height: 50px;
+    line-height: 3;
+}
+
+.container .content-profile .content-header .title-box {
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.container .content-profile .content-header #hr {
+    color: red;
+}
+
+.container .content-profile .main-content {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.container .content-profile .main-content .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+    line-height: 4;
+}
+
+.container .content-profile .main-content .box .input {
+    height: 41px;
+    width: 256px;
+    border: solid 1px #d6d5d5;
+    padding: 12px 20px;
+}
+
+.container .content-profile .main-content .box .a {
+    border-start-start-radius: 3px;
+    border-end-start-radius: 3px;
+}
+
+.container .content-profile .main-content .box .b {
+    border-end-end-radius: 3px;
+    border-start-end-radius: 3px;
+}
+
+.container .content-profile .main-content .box .phone-input {
+    width: 390px;
+    height: 41px;
+    border-radius: 3px;
+    border: solid #d6d5d5 1px;
+    border-start-end-radius: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+.container .content-profile .main-content .box .inputemail {
+    width: 512px;
+    height: 41px;
+    border-radius: 3px;
+    border: solid #d6d5d5 1px;
+    padding: 12px 20px;
+}
+.container .content-profile .buttons {
+    display: flex;
+    justify-content: end;
+}
+
+
+.container .content-profile .buttons .save-button {
+    border: transparent;
+    background-color: #e81a41;
+    color: white;
+    margin: 35px;
+    height: 39px;
+    width: 120px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.container .content-profile .bio-content {
+    border: solid #d6d5d5 1px;
+    border-radius: 3px;
+    margin-top: 12px;
+    height: 123px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content-profile {
+        width: 380px !important;
+        height: 1190px !important;
+    }
+
+    .main-content {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .main-content .box {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center !important;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        height: 41px;
+        width: 200px !important;
+        border: solid 1px #d6d5d5;
+        padding: 12px 20px;
+    }
+
+    .phone-input {
+        width: 120px !important;
+        height: 41px;
+        border-radius: 3px;
+        border: solid #d6d5d5 1px;
+        border-start-end-radius: none;
+        padding: 12px 20px;
+    }
+
+    .inputemail {
+        width: 200px !important;
+        height: 41px;
+        border-radius: 3px;
+        border: solid #d6d5d5 1px;
+        padding: 12px 20px;
+    }
+    .bio-content {
+        border: solid #d6d5d5 1px;
+        border-radius: 3px;
+        width: 350px;
+    }
+
+    .buttons {
+        justify-content: center !important;
+    }
+}

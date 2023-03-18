@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Karriery</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -23,34 +24,36 @@
         });
     </script>
     <script>
-        // Get the elements
-        document.addEventListener("DOMContentLoaded", () => {
-            const dropdownToggle = document.getElementById('dropdown-toggle');
-            const closeBtn = document.getElementById('close');
-            const links = document.querySelector('.links');
-            const navig = document.querySelector('.navig');
-            const nodeco = document.querySelector('.nodeco');
+    // Get the elements
+    document.addEventListener("DOMContentLoaded", () => {
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        const closeBtn = document.getElementById('close');
+        const links = document.querySelector('.links');
+        const navig = document.querySelector('.navig');
+        const nodeco = document.querySelector('.nodeco');
 
-            // Add click event listener to dropdown toggle button
-            if (dropdownToggle) {
-                dropdownToggle.addEventListener('click', () => {
-                    dropdownToggle.style.display = 'none';
-                    closeBtn.style.display = 'block';
-                    links.className = 'linksnew'
-                    navig.className = 'newnavig';
-                });
-            }
+        // Add click event listener to dropdown toggle button
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', () => {
+                dropdownToggle.style.display = 'none';
+                closeBtn.style.display = 'block';
+                links.className = 'linksnew';
+                navig.className = 'newnavig';
+            });
+        }
 
-            // Add click event listener to close button
-            if (closeBtn) {
-                closeBtn.addEventListener('click', () => {
-                    dropdownToggle.style.display = 'block';
-                    closeBtn.style.display = 'none';
-                    links.className = 'links'
-                    navig.className = 'navig';
-                });
-            }
-        });
+        // Add click event listener to close button
+        if (closeBtn) {
+            closeBtn.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default behavior of the click event
+                dropdownToggle.style.display = 'block';
+                closeBtn.style.display = 'none';
+                links.className = 'links';
+                navig.className = 'navig';
+            });
+        }
+    });
+
     </script>
 </head>
 
@@ -62,19 +65,19 @@
                 <img src="./assets/logo.png" alt="">
                 <div class="links">
                     <span>
-                        <a href="#home">Home</a>
+                        <a class="navilinks" href="#home">Home</a>
                     </span>
                     <span>
-                        <a href="#About">About</a>
+                        <a class="navilinks" href="#About">About</a>
                     </span>
                     <span>
-                        <a href="#Pricing">Pricing</a>
+                        <a class="navilinks" href="#Pricing">Pricing</a>
                     </span>
                     <span>
-                        <a href="#Contact">Contact</a>
+                        <a class="navilinks" href="#Contact">Contact</a>
                     </span>
                 </div>
-                <button class="getstarted">Get Started</button>
+                <button onclick="location.href='/#Pricing'" class="getstarted">Get Started</button>
                 <a href="#" class="drop-down-toggle" id="dropdown-toggle">
                     <img src="https://www.pngitem.com/pimgs/m/30-302949_menu-bar-icon-png-transparent-png.png" alt=""
                         style="width: 20px;">
@@ -316,7 +319,7 @@
                                 <li>Honest resume feedback.</li>
                                 <li>Applicant tracking system feedback.</li>
                                 <li>Content and design feedback.</li>
-                            </ul><button type="button" class="w-100 btn btn-lg btn-outline-danger">
+                            </ul><button onclick="location.href='./contact.html'" type="button" class="w-100 btn btn-lg btn-outline-danger">
                                 Buy now </button>
                         </div>
                     </div>
@@ -334,7 +337,7 @@
                                 <li>Formatted for success.</li>
                                 <li>Keyword optimized.</li>
                                 <li>Tips to apply in jobs.</li>
-                            </ul><button type="button" class="w-100 btn btn-lg btn-danger"> Buy now
+                            </ul><button onclick="location.href='./contact.html'" type="button" class="w-100 btn btn-lg btn-danger"> Buy now
                             </button>
                         </div>
                     </div>
@@ -354,7 +357,7 @@
                                 <li>Cover letter.</li>
                                 <li>60-day interview guarantee.</li>
                                 <li>LinkedIn Makeover.</li>
-                            </ul><button type="button" class="w-100 btn btn-lg btn-danger" style="cursor: pointer;">
+                            </ul><button onclick="location.href='./contact.html'" type="button" class="w-100 btn btn-lg btn-danger" style="cursor: pointer;">
                                 Buy now </button>
                         </div>
                     </div>
